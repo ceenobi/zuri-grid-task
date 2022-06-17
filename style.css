@@ -27,10 +27,7 @@ body {
   max-width: 1440px;
 }
 
-.center {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+.view {
   padding: 1.5rem 0.5rem;
   position: relative;
 }
@@ -111,16 +108,22 @@ button:hover {
   color: var(--very-dark-cyan);
 }
 
-@media screen and (min-width: 992px) {
-  .center {
-    height: 800px!important;
-  }
-
+@media screen and (min-width: 1400px) {
   .gridA {
     width: 300px !important;
   }
+}
+
+@media screen and (min-width: 992px) {
+  .view {
+    min-height: 700px !important;
+  }
+
+  .gridA {
+    width: 280px !important;
+  }
   p {
-    line-height: 20px;
+    line-height: 22px !important;
   }
 }
 
@@ -132,10 +135,10 @@ button:hover {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
-  .center {
-    height: 600px;
+  .view {
+    min-height: 600px;
   }
-  .al {
+  .center {
     position: absolute;
     top: 50%;
     left: 50%;
