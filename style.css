@@ -108,7 +108,15 @@ button:hover {
   color: var(--very-dark-cyan);
 }
 
+.box-link {
+    text-align: center;
+}
+
 @media screen and (min-width: 1400px) {
+  .view {
+    min-height: 1000px !important;
+  }
+
   .gridA {
     width: 300px !important;
   }
